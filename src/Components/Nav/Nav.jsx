@@ -17,9 +17,9 @@ const Nav = () => {
     return (
         <nav className="flex justify-between p-4">
             <div className='flex gap-3' onClick={()=>setOpen(!open)}>
-            {open ? <Menu className='mt-1 lg:hidden' ></Menu>: <X className='mt-1 lg:hidden'></X>}
+            {open ? <X className='mt-1 lg:hidden'></X> : <Menu className='mt-1 lg:hidden' ></Menu>}
             {/* for medium device menu show left side */}
-            <ul className='lg:hidden absolute mt-7 grid grid-cols-1'>
+            <ul className={`lg:hidden absolute font-semibold text-md grid grid-cols-1 duration-1000 ${open ? 'top-12' : '-top-40'}`}>
                 {links}
             </ul>
             
