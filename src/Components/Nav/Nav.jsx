@@ -14,7 +14,7 @@ const Nav = () => {
         <nav>
             <ul className="space-x-6">
                 {
-                    navigationData.map(nav=><a href={nav.path}>{nav.name}</a>)
+                    navigationData.map(nav=><a key={nav.id} href={nav.path}>{nav.name}</a>)
                 }
             </ul>
         </nav>
