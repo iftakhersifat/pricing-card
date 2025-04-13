@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Axios = ({axiosPromise }) => {
     const useAxios = use(axiosPromise )
@@ -20,9 +21,19 @@ const Axios = ({axiosPromise }) => {
         return mainData;
     })
     console.log(dataProcessing)
+
+    
     return (
         <div>
-            
+            <BarChart width={600} height={600} data={dataProcessing}>
+                <XAxis dataKey={"name"}></XAxis>
+                <YAxis></YAxis>
+                <Tooltip></Tooltip>
+                <Bar dataKey={"name"} fill='green'></Bar>
+                <Bar dataKey={"math"} fill='blue'></Bar>
+                <Bar dataKey={"physics"} fill='red'></Bar>
+                <Bar dataKey={"chemistry"} fill='yellow'></Bar>
+            </BarChart>
         </div>
     );
 };
