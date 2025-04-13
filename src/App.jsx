@@ -1,13 +1,19 @@
+import { Suspense } from 'react'
 import './App.css'
 import Nav from './Components/Nav/Nav'
-import Navbar from './Components/Navbar/Navbar'
+import PricingCards from './Components/PricingCards/PricingCards'
+
 
 function App() {
+  const pricingPromise =fetch("pricingData.json")
+  .then(res=>res.json())
 
   return (
     <>
       <Nav></Nav>
-      <Navbar></Navbar>
+      <Suspense>
+        <PricingCards pricingPromise={pricingPromise}></PricingCards>
+      </Suspense>
 
     </>
   )
