@@ -1,12 +1,14 @@
 import './App.css'
+import Nav from './Components/Nav/Nav'
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1>pricing-card</h1>
+      <Nav></Nav>
       <Navbar></Navbar>
+
     </>
   )
 }
