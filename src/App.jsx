@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import './App.css'
 import Nav from './Components/Nav/Nav'
 import PricingCards from './Components/PricingCards/PricingCards'
+import Recharts from './Components/Recharts/Recharts'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <PricingCards pricingPromise={pricingPromise}></PricingCards>
       </Suspense>
 
+      <Recharts></Recharts>
     </>
   )
 }
