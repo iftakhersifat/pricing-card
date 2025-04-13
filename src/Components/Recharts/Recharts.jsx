@@ -20,7 +20,7 @@ const Recharts = () => {
             <LineChart width={600} height={600} data={data}>
                 <Line dataKey={"math"}></Line>
                 <Line dataKey={"physics"} stroke="red"></Line>
-                
+                <Tooltip></Tooltip>
                 <XAxis dataKey={"id"}></XAxis>
                 <YAxis></YAxis>
             </LineChart>
