@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const PricingCards = () => {
+const PricingCards = ({pricingPromise}) => {
+    const useData = useState(pricingPromise);
+    console.log(useData)
     return (
         <div>
             

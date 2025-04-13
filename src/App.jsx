@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <Suspense>
+      <Suspense fallback={<span className="loading loading-ball loading-lg"></span>}>
         <PricingCards pricingPromise={pricingPromise}></PricingCards>
       </Suspense>
 
