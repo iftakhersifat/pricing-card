@@ -25,7 +25,7 @@ const Nav = () => {
             
             <h1 className='font-bold text-xl'>PricingCard</h1>
             </div>
-            <ul className="space-x-6 font-semibold text-md">
+            <ul className="space-x-6 font-semibold text-md md:hidden lg:flex hidden">
                 {
                     links
                 }
