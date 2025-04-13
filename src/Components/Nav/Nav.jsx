@@ -11,12 +11,14 @@ const navigationData = [
   
 const Nav = () => {
     return (
-        <nav>
-            <ul className="space-x-6">
+        <nav className="flex justify-between p-4">
+            <h1 className='font-bold'>PricingCard</h1>
+            <ul className="space-x-6 font-semibold">
                 {
                     navigationData.map(nav=><a key={nav.id} href={nav.path}>{nav.name}</a>)
                 }
             </ul>
+            <button className='bg-amber-600 font-semibold text-white rounded-lg px-3 py-2 transition hover:bg-green-700'>Sign In</button>
         </nav>
     );
 };
