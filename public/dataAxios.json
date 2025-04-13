@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Alice",
+      "math": 85,
+      "physics": 78,
+      "chemistry": 92
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "math": 72,
+      "physics": 81,
+      "chemistry": 76
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "math": 90,
+      "physics": 88,
+      "chemistry": 95
+    },
+    {
+      "id": 4,
+      "name": "Diana",
+      "math": 67,
+      "physics": 74,
+      "chemistry": 70
+    },
+    {
+      "id": 5,
+      "name": "Ethan",
+      "math": 88,
+      "physics": 90,
+      "chemistry": 85
+    }
+  ]
+  
